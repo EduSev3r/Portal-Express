@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Express - Restaurante</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css/styles.css">
+    <link rel="icon" href="Assets/logo%20aba.jpg" type="image/jpg">
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggle = document.querySelector('.toggle-menu');
+            const menu = document.getElementById('menu');
+            toggle.addEventListener('click', () => {
+                menu.classList.toggle('show');
+                toggle.classList.toggle('open');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="contact-info">
+        <span>Atendimento: Seg-Sáb 11h00 às 23h30 | Dom 11h00 às 22h00</span>
+    </div>
+
+    <header class="top">
+        <img src="Assets/logo.png" class="logo" alt="Logo do Restaurante Portal Express">
+        
+        <nav class="top__menu" id="menu">
+            <a class="top__menu__link" href="#home">Home</a>
+            <a class="top__menu__link" href="#menu-section">Cardápio</a>
+            <a class="top__menu__link" href="#about">Sobre Nós</a>
+            <a class="top__menu__link" href="#contact">Contato</a>
+        </nav>
+
+        <div class="toggle-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <div class="hero-section" id="home"> <div class="hero-content">
+            <h1>BEM-VINDO AO PORTAL EXPRESS 🍽️</h1>
+            <a class="call-to-action-button" href="#menu-section">VEJA O CARDÁPIO</a> </div>
+    </div>
+
+    <main class="main-content"> <section class="menu-section-container" id="menu-section"> <h2 class="section-title">Nosso Cardápio</h2>
+            <p class="section-description">Sabores autênticos, feitos com paixão e os melhores ingredientes.</p> <div class="menu-items-grid"> <div class="menu-item-card"> <img src="Assets/pizza.jpg" alt="Pizza artesanal">
+                    <h3 class="item-title">Pizzas Artesanais</h3>
+                    <p class="item-description">
+                        Feitas com massa fresca, molho caseiro e ingredientes selecionados.
+                    </p>
+                </div>
+                <div class="menu-item-card">
+                    <img src="Assets/burger.jpg" alt="Hambúrguer gourmet">
+                    <h3 class="item-title">Burgers Gourmet</h3>
+                    <p class="item-description">
+                        Carnes suculentas, pão artesanal e acompanhamentos especiais.
+                    </p>
+                </div>
+                <div class="menu-item-card">
+                    <img src="Assets/pasta.jpg" alt="Prato de massa">
+                    <h3 class="item-title">Massas</h3>
+                    <p class="item-description">
+                        Receitas italianas clássicas preparadas com o melhor sabor.
+                    </p>
+                </div>
+                <div class="menu-item-card">
+                    <img src="Assets/dessert.jpg" alt="Sobremesa deliciosa">
+                    <h3 class="item-title">Sobremesas</h3>
+                    <p class="item-description">
+                        Doces irresistíveis para fechar sua refeição com chave de ouro.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us-section" id="about"> <img class="about-image" src="Assets/restaurant.jpg" alt="Foto do restaurante Portal Express"> <div class="about-content">
+                <h2 class="section-title">Sobre Nós</h2>
+                <p class="section-description">Nossa história, paixão pela culinária e o que nos move.</p> <p class="about-text">
+                    O **Portal Express** é um restaurante fundado em 2020 com a missão de oferecer pratos saborosos e
+                    acessíveis, preparados com ingredientes frescos e de qualidade.
+                    Nosso ambiente é descontraído e acolhedor, ideal para reunir família e amigos.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact"> <div class="contact-details-wrapper">
+                <h2 class="section-title">Fale Conosco</h2>
+                <p class="section-description">Estamos prontos para atender você com o melhor sabor.</p> <div class="contact-info-block">
+                    <h3 class="contact-subtitle">Reservas & Pedidos</h3>
+                    <p class="contact-text">📞 +55 (11) 99999-9999</p>
+                    <p class="contact-text">📧 contato@portalexpress.com</p>
+                </div>
+                <div class="contact-info-block">
+                    <h3 class="contact-subtitle">Endereço</h3>
+                    <p class="contact-text">Rua dos Sabores, 123</p>
+                    <p class="contact-text">São Paulo - SP</p>
+                </div>
+            </div>
+            <div class="map-container"> <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.060155077435!2d-46.63467398502213!3d-23.5505202846877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a21e7d8c11f%3A0x8e87d0c7f7e9f3b5!2sPra%C3%A7a%20da%20S%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1628173490789!5m2!1spt-BR!2sbr"
+                    class="map-frame" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"> <p>© 2025 Portal Express – Restaurante & Delivery. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
