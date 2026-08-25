@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://portal-express.vercel.app/sitemap.xml
